@@ -1,18 +1,12 @@
 
-class persona:
-    def __init__(self,apellido,nombre) -> None:
+class alumno:
+    def __init__(self,apellido,nombre,numalum) -> None:
         self.apellido = apellido 
         self.nombre = nombre
+        self.numalum = numalum 
     def __str__(self) -> str:
         return f"Apellido: {self.apellido} Nombre: {self.nombre}"
     
-class alumno (persona):
-    def __init__(self,apellido,nombre,numalum) -> None:
-        super().__init__(apellido,nombre,numalum)
-        self.numalum = numalum
-    def __str__(self) -> str:
-        return super().__str__() + f"Número de alumno: {self.numalum}"
-
 alumno1 = alumno ("Amaya","Jeremias",1)
 alumno2 = alumno ("Bulacio","Santiago",2)
 alumno3 = alumno ("Carunchio","Julieta",3)
