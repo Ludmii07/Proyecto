@@ -36,7 +36,44 @@ alumno20 = alumno ("Soria","Mateo",20)
 alumno21 = alumno ("Strauss","Kevin",21)
 alumno22 = alumno ("Vera","Mateo",22)
 alumno23 = alumno ("Vergara","Nelson",23)
-print (alumno2)
+
+def menu ():
+    seleccion = 0
+    while seleccion !=5:
+        print ("Registro de asistencias 6to B")
+        print ("Elija una de las opciones: ")
+        print ("------------------------------------------------------------------")
+        print ("1. Registro de inasistencias del mes por alumno")
+        print ("2. Registro de tardanzas del mes por alumno")
+        print ("3. Calcular el total de inasistencias")
+        print ("4. Calcular el total de tardanzas")
+        print ("5. Salir")
+        seleccion = int(input ("Elije una opcion:"))
+        if seleccion == 1:
+            registro_de_inasis ()
+        if seleccion == 2:
+            registro_de_tard ()
+        if seleccion == 3:
+            total_inasis ()
+        if seleccion == 4:
+            total_tard ()
+        if seleccion == 5:
+            salir ()
+
+def registro_de_inasis ():
+    print ("La cantidad de inasistencias que tuvo el alumno este mes son: ")
+def registro_de_tard ():
+    print ("La cantidad de tardanzas que tuvo el alumno este mes son: ")
+def total_inasis ():
+    print ("El total de inasistencias es: ")
+def total_tard ():
+    print ("El total de tardanzas es: ")
+def salir ():
+    print ("Todos los cambios han sido guardados correctamente")
+
+#-------------------------------------------------------------------------------------
+menu ()
+
 
 
 
